@@ -1,0 +1,58 @@
+* {
+    font-size: x-large;
+}
+
+html, body, .mainDiv {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.scrollY {
+    overflow-y: auto;
+    height: 100%;
+}
+
+.mainDiv > * {
+    width: 100%;
+    height: 100%;
+}
+
+.columnFlexbox {
+    display: flex;
+    flex-direction: row;
+}
+
+#folderColumn {
+    /*background-color: blue;*/
+    max-width: 500px;
+    height: calc(100% - 3em);
+}
+
+#folderColumn .current{
+    background-color: greenyellow;
+}
+
+#fileList {
+    margin-bottom: 2em;
+}
+
+#imageColumn {
+    /*background-color: green;*/
+}
+
+#image {
+    max-height: 100%;
+}
+
+#fragmentColumn {
+    /*background-color: red;*/
+}
+
+#fragment {
+    margin-top: 5em;
+    margin-left: 20em;
+}

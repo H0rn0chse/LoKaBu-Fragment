@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoKaBu Fragment Editor</title>
+
+    <link rel="stylesheet" href="./renderer/styles/main.css">
+
+    <script type="module">
+        console.log("app started");
+        import { events } from './renderer/events.js'
+        window.events = events;
+    </script>
+</head>
+<body>
+    <div class="columnFlexbox mainDiv">
+        <div id="folderColumn">
+            <button onclick="events.raise('folder.showPrev')">Show Prev</button>
+            <button onclick="events.raise('folder.showNext')">Show Next</button>
+            <button onclick="events.raise('folder.open')">Open Folder</button>
+            <div class="scrollY">
+                <ul id="fileList">
+                </ul>
+            </div>
+        </div>
+        <div id="fragmentColumn">
+            <!--<button onclick="events.raise('fragment.save')">Save Fragment</button>-->
+            <div id="fragment">
+                <input type="date" class="date" onchange="events.raise('fragment.change')">
+            </div>
+        </div>
+        <div id="imageColumn">
+            <img id="image">
+        </div>
+    </div>
+</body>
+</html>

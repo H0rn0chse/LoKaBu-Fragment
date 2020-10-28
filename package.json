@@ -1,0 +1,26 @@
+{
+  "name": "lokabu-fragment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/H0rn0chse/LoKaBu-Fragment.git"
+  },
+  "author": {
+    "name": "H0rn0chse",
+    "email": "h0rn0chse@gmx.de"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/H0rn0chse/LoKaBu-Fragment/issues"
+  },
+  "homepage": "https://github.com/H0rn0chse/LoKaBu-Fragment#readme",
+  "dependencies": {
+    "electron": "^10.1.5",
+    "glob": "^7.1.6"
+  }
+}
